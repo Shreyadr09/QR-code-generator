@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+            h1 {
+        color: #333333;
+    }
+    
+    form {
+        margin-top: 20px;
+    }
+    
+    input[type="text"] {
+        padding: 10px;
+        width: 300px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #337ab7;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #23527c;
+    }
+</style>
+</head>
+
+<body>
+    <h1>QR Code Generator</h1>
+    <form action="/scan" method="post">
+        <input name="url" type="text" placeholder="URL">
+        <input type="submit" value="Generate QR">
+    </form>
+</body>
+</html>
